@@ -33,7 +33,7 @@ func main() {
 	go increment(&count, 3, ch, &wg)
 
 	go func() {
-		defer close(ch)
+		defer close(ch) // close the channel upon completion
 		wg.Wait()
 	}()
 
