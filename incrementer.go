@@ -38,7 +38,6 @@ func main() {
 	}()
 
 	full := <-ch
-
 	fmt.Printf("full is %v", full)
 	fmt.Println(count)
 }
